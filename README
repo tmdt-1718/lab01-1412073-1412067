@@ -6,5 +6,6 @@ Afterward, everytime you need to start web server, just run ./run_image and ./st
 
 If you wanna save the state of container (all installed packages), then follow these instructions:
 	1. exit
-	2. in host machine use: docker ps -a to get image ID
-	3. docker commit <ID>
+	2. in host machine use: docker ps -a to get container_ID
+	3. docker commit <container_ID>
+	4. change 
