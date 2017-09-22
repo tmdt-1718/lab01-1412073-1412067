@@ -1,0 +1,9 @@
+#!/bin/bash
+#run this script in order to start docker deamon, image
+
+#start docker 
+#distro: CentOS 7, for another distro, please google it :)
+systemctl start docker.service
+
+#start image, map volume, port
+docker run --name web -p 80:3000 -v /home/npcuong308/rails-project/:/home/ -it 6ad6a5740e9a
