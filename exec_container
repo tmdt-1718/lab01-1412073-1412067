@@ -1,5 +1,0 @@
-#!/bin/bash
-#execute a running image
-
-docker start web
-docker exec -it web /bin/bash
