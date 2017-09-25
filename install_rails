@@ -13,7 +13,7 @@ apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev -y
 gem install rails
 
 #create project
-rails new -f web
+rails new -f web --database=postgresql
 cd ./web/
 bundle install 
 
