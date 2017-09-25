@@ -2,10 +2,10 @@
 
 one:
   commenter: MyString
-  content: MyText
+  body: MyText
   article: one
 
 two:
   commenter: MyString
-  content: MyText
+  body: MyText
   article: two
