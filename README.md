@@ -1,10 +1,10 @@
-# BT-TMDT-1 - *Name of your app*
+# BT-TMDT-1 - *Personal Blog*
 
-**Name of your app** là một bài tập môn TMDT. Ứng dụng cho phép người dùng gửi tin nhắn (email) cho người dùng khác.
+**Personal Blog** là một bài tập môn TMDT. Đây là một blog hỗ trợ các chức năng như.
 
 Thành viên:
-* [ ] **MSSV1** Tên sinh viên 1 (tên tài khoản github)
-* [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
+* [ ] **1412067** Nguyễn Phú Cường (tên tài khoản github: 1412067)
+* [ ] **1412073** Kiều Tài Danh (tên tài khoản github: 1412073)
 
 URL: **URL hosting của bài tập**
 
