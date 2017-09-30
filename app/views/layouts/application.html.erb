@@ -3,33 +3,35 @@
 	<head>
 		<title>Dota 2 Blog</title>
 		<%= csrf_meta_tags %>
-
+  <head>
+  	<link rel="shortcut icon" href="/favicon.ico">
+    <title>Lab1 1412073-1412067</title>
+    <%= csrf_meta_tags %>
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 	</head>
-
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" href="/">
 				<img src="/assets/logo.jpg" width="30" height="30" alt="">
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="collapse navbar-collapse" id="navbarMobile">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
 					<a class="nav-link" href="/">Home <span class="sr-only"></span></a>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link" href="#">Album</a>
+					<a class="nav-link" href="/albums">Album</a>
 					</li>
 					<li class="nav-item">
 					<a class="nav-link" href="/articles">Blog</a>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
+					<a class="nav-link" href="/about">About</a>
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
@@ -38,6 +40,15 @@
 				</form>
 			</div>
 		</nav>
-		<%= yield %>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					Sidebar
+				</div>
+				<div class="col-md-9">
+					<%= yield %>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

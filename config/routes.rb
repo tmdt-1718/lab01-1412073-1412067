@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
 	resources :articles do
 		resources :comments
-	end	
+	end
+
+	resources :albums #, only: [:show]
+	resources :about#, only:[:index]
   root 'welcome#index'
 end

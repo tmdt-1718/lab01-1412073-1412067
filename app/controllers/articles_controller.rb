@@ -35,8 +35,11 @@ class ArticlesController < ApplicationController
 
 		if @article.update(article_params)
 			# show the submitted article
-			redirect_to @article
+			flash[:success] = "Update article #{@article.id} successfully."
+			# redirect_to @article
+			redirect_to article_path(@article.id)
 		else
+			flash[:error] = "Cannot update article #{@article.id}."
 			render 'edit'
 		end
 	end
