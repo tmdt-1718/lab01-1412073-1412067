@@ -1,6 +1,15 @@
-<h1>New Article</h1>
+<div class="container">
+	<div class="row">
+		<h1 class="col-md-12 text-center">New Article</h1>
 
-<%-#link to index action%>
-<i><%= link_to 'Back', articles_path %></i>
+		<%-#link to index action%>
+		<div class="col-md-3 pb-3">
+			<%= link_to '<< Back', articles_path, :class => "btn btn-secondary" %>
+		</div>
+		<div class="col-md-12">
+			<%= render 'form' %>
+		</div>
+		
+	</div>
+</div>
 
-<%= render 'form'%>
