@@ -3,8 +3,8 @@
 **Personal Blog** là một bài tập môn TMDT. Đây là một blog hỗ trợ các chức năng như.
 
 Thành viên:
-* [ ] **1412067** Nguyễn Phú Cường (tên tài khoản github: 1412067)
-* [ ] **1412073** Kiều Tài Danh (tên tài khoản github: 1412073)
+* [x] **1412067** Nguyễn Phú Cường (tên tài khoản github: 1412067)
+* [x] **1412073** Kiều Tài Danh (tên tài khoản github: 1412073)
 
 URL: **URL hosting của bài tập**
 
