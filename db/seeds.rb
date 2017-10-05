@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Album.destroy_all
-npcuong = Album.create(creator: 'npcuong', view: 0, coverphoto: 'https://cdn.wallpapersafari.com/25/66/Pumz64.png')
+npcuong = Album.create(creator: 'npcuong', view: 0, coverphoto: 'http://genk2.vcmedia.vn/DlBlzccccccccccccE5CT3hqq3xN9o/Image/2013/05/DuyTung/anh-9-013e7.jpg')
 
 ktdanh = Album.create(creator: 'ktdanh', view: 0, coverphoto: 'http://genknews.genkcdn.vn/k:2016/img20160211125859390/dota-2-morphling--su-troi-day-cua-thuy-than-tren-dau-truong-chuyen-nghiep.jpg')
 

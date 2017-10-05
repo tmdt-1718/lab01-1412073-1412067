@@ -16,7 +16,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-$(function () {
+jQuery(function () {
 
     function initMap() {
 
