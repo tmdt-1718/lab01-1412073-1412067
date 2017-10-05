@@ -1,6 +1,21 @@
-<h1>Edit article</h1>
+<div class="container">
+	<div class="row">
+		<h1 class="col-md-12 text-center pt-3">Edit article</h1>
+		<div class="col-md-12">
+			<% if flash[:error] %>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				</button>
+				<div class="alert alert-danger alert-dismissible fade show" role="alert">
+					<%= flash[:error] %>
+				</div>
+			<% end %>
+		</div>
+		<%-#link to index action%>
+		<div class="col-md-12">
+			<%= link_to '<< Back', articles_path, class: "btn btn-secondary mb-3" %>
+			<%= render 'form' %>
+		</div>
+	</div>
+</div>
 
-<%-#link to index action%>
-<i><%= link_to 'Back', articles_path %></i>
-
-<%= render 'form' %>

@@ -1,0 +1,12 @@
+<h1>Albums</h1>
+<div class="row">
+	<% @albums.each do |album| %>
+		<div class="my-image col-md-4">
+			<a href=<%= album_path(album) %> >
+				<img src=<%= album.coverphoto %> class="rounded mx-auto d-block" atl="">
+				<b>Creator:</b> <span class="badge badge-info"><%= album.creator %></span></br>
+				<b>Photo View   :</b> <span class="badge badge-info"><%= album.view %></span>
+			</a>
+		</div>
+	<% end %>
+</div>

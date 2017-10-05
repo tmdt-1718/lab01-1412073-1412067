@@ -1,0 +1,11 @@
+@media (max-width: 767px){
+	#side-menu{
+		visibility: hidden;
+	}
+	#side-menu-mobile{
+		visibility: inherit !important;
+	}
+	#sidemenu-button{
+		visibility: inherit;
+	}
+}
