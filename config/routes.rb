@@ -5,7 +5,10 @@ Rails.application.routes.draw do
 		resources :comments
 	end
 
-	resources :albums #, only: [:show]
+	resources :albums do 
+		resources :photos, only: [:index, :show, :update]
+	end
 	resources :about#, only:[:index]
+
   root 'welcome#index'
 end
