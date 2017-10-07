@@ -1,12 +1,17 @@
 <h1>Albums</h1>
 <div class="row">
 	<% @albums.each do |album| %>
-		<div class="my-image col-md-4">
-			<a href=<%= album_path(album) %> >
-				<img src=<%= album.coverphoto %> class="rounded mx-auto d-block" atl="">
-				<b>Creator:</b> <span class="badge badge-info"><%= album.creator %></span></br>
-				<b>Photo View   :</b> <span class="badge badge-info"><%= album.view %></span>
-			</a>
+		<div class="col-md-4">
+			<div class="card">
+				<img src=<%= album.coverphoto %> class="card-img-top" atl="">
+				<div class="card-body">
+					<a href=<%= album_path(album) %> >Details</a>
+				</div>
+				<ul class="list-group-flush">
+					<li class="list-group-item"><b>Creator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b> <span class="badge badge-info"><%= album.creator %></span></br></li>
+					<li class="list-group-item"><b>Photo View:&nbsp;</b> <span class="badge badge-info"><%= album.view %></span></li>
+				</ul>
+			</div>	
 		</div>
 	<% end %>
 </div>

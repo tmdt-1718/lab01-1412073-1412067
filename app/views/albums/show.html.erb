@@ -1,11 +1,18 @@
 <h1>Photos</h1>
 <div class="row">
 	<% @album.photos.each do |photo| %>
-		<div class="my-image col-md-3">
-			<img src=<%= photo.source %> class="img-thumbnail" atl="">
-			<b>Creator:</b> <span class="badge badge-info"><%= photo.creator %></span></br>
-			<b>View   :</b> <span class="badge badge-info"><%= photo.view %></span></br>
-			<%= link_to 'Show Image', album_photo_path(@album, photo), :class => "btn btn-primary" %>
+		<div class="col-md-3">
+			<div class="card">
+				<img src=<%= photo.source %> class="card-img-top" atl="">
+				<ul class="list-group-flush">
+					<li class="list-group-item"><b>Creator:&nbsp;</b> <span class="badge badge-info"><%= photo.creator %></span></br></li>
+					<li class="list-group-item"><b>View&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b> <span class="badge badge-info"><%= photo.view %></span></br></span></li>
+					
+				</ul>
+				<div class="card-body">
+					<%= link_to 'Show Image', album_photo_path(@album, photo), :class => "card-link" %>
+				</div>
+			</div>
 		</div>
 	<% end %>			
 </div>

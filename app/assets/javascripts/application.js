@@ -15,7 +15,9 @@
 //= require bootstrap-sprockets
 //= require rails-ujs
 //= require turbolinks
+//= require dropzone
 //= require_tree .
+
 jQuery(function () {
 
     function initMap() {
