@@ -2,3 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+.card-img-top {
+	    width: 100%;
+}
+.card img {
+	height: auto;
+	width: auto;
+	max-height: 50%;
+	max-width: 100%;
+}
