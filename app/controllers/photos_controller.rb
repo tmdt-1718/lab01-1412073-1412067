@@ -1,8 +1,12 @@
 class PhotosController < ApplicationController
+	add_breadcrumb "Home", :root_path, :title => "Back to Homepage"
+	add_breadcrumb "Albums", :albums_path, :title => "Back to Albums"
+	
 	def create
 		@album = Album.find(params[:album_id])
 		@photo = @album.photos.create(photo_params)
 		redirect_to album_path(@album)
+		add_breadcrumb "Creating Album"
 	end
 
 	def show
@@ -15,6 +19,7 @@ class PhotosController < ApplicationController
 
 		if @album.update({view: @album.view+1})
 		end
+		add_breadcrumb "Showing Image"
 	#	if @photo.update(photo_params)
 	#	end
 	end

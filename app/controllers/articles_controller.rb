@@ -1,20 +1,24 @@
 class ArticlesController < ApplicationController
 	before_action :authenticate
-
+	add_breadcrumb "Home", :root_path
+	add_breadcrumb "Blog", :articles_path , :title => "Back to blog"
 	def index
 		@articles = Article.all
 	end
 
 	def show
 		@article = Article.find(params[:id])
+		add_breadcrumb "Showing Article"
 	end
 
 	def new
 		@article = Article.new
+		add_breadcrumb "Composing Article"
 	end
 	
 	def edit
 		@article = Article.find(params[:id])	
+		add_breadcrumb "Editing Article"
 	end
 	
 	def create
