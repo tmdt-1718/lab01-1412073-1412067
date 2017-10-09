@@ -1,7 +1,5 @@
 class ArticlesController < ApplicationController
-#An controller includes: index, new, edit, create, update, show and destroy action
-#Controller takes request, gets data form users or database
-#to view data or show things to user, we use app/views/articles/<>.html.erb
+	before_action :authenticate
 
 	def index
 		@articles = Article.all
@@ -29,7 +27,7 @@ class ArticlesController < ApplicationController
 			render 'new'
 		end
 	end
-	
+
 	def update 
 		@article = Article.find(params[:id])
 
