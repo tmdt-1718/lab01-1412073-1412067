@@ -25,13 +25,13 @@ Yêu cầu **bắt buộc**
 * [x] Vào trang about sẽ thấy thông tin nhóm: tên nhóm, danh sách thành viên (mã sinh viên, họ tên, ảnh đại diện) và bản đồ google map hiển thị địa chỉ liên lạc của nhóm. (**1412073**)
 * [x] Vào trang blog sẽ thấy danh sách các bài viết, mỗi bài viết bao gồm: nội dung rút gọn, ảnh đại diện, người đăng và số view. (**MSSV**)
 * [x] Nhấn vào mỗi bài viết sẽ thấy chi tiết bài viết cùng đầy đủ nội dung của bài viết. (**1412067**)
-* [ ] Cho phép người dùng biết họ đang ở trang nào (sử dụng breadcrumb, highlight navigation bar,...). (**MSSV**)
+* [x] Cho phép người dùng biết họ đang ở trang nào (sử dụng breadcrumb, highlight navigation bar,...). (**1412067**)
 * [x] Cho phép người dùng đăng nhập, đăng xuất, đăng ký thông tin tài khoản. (**1412067**)
 * [x] Cho phép người dùng đã đăng nhập đăng thêm bài viết mới. (**1412073**)
 * [ ] Sử dụng bcrypt hoặc devise để quản lý thông tin người dùng và băm mật khẩu. (**MSSV**)
 
 Yêu cầu **không bắt buộc**:
-* [ ] Có thể xem danh sách các comment của từng bài viết.  (**MSSV**)
+* [x] Có thể xem danh sách các comment của từng bài viết.  (**1412073**)
 * [ ] Cho phép người dùng đã đăng nhập comment cho bài viết. (**MSSV**)
 * [ ] Quản lý thêm thông tin tag cho mỗi bài viết. Mỗi bài viết có thể bao gồm nhiều tag và mỗi tag có thể có nhiều bài viết. (**MSSV**)
 * [ ] Cho phép người dùng đăng nhập bằng tài khoản facebook và lấy ảnh đại diện, email từ facebook. (**MSSV**)
@@ -49,10 +49,11 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 ## Demo
 
 Link ảnh GIF demo ứng dụng:
-
-![Video Walkthrough](demo.gif)
-
-Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
+https://media.giphy.com/media/l378tqo5dfYzYellC/giphy.gif
+https://media.giphy.com/media/3ov9jVWSErC88DqLUk/giphy.gif
+https://media.giphy.com/media/3ov9jGxi0p93iD8Gha/giphy.gif
+https://media.giphy.com/media/3ohhwlAH7HDx7UIuHu/giphy.gif
+https://media.giphy.com/media/l1J9Ceh2VolUQa6UE/giphy.gif
 
 
 ## License
