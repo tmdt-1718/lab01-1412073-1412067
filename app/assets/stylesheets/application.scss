@@ -1,3 +1,6 @@
+/*
+*= require dropzone/dropzone
+*/
 @import "bootstrap";
 @import "albums";
 
@@ -16,5 +19,9 @@
 }
 #sidemenu-button{
 	visibility: hidden;
+}
+ol, ul, dl{
+    padding-left: 0;
+    margin-bottom: 0;
 }
 @import "responsive";
