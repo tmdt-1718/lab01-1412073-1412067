@@ -16,7 +16,7 @@ User.destroy_all
 	album.photos.create!(creator: 'npcuong', view: 0, source: 'https://sd.keepcalm-o-matic.co.uk/i-w600/setu-picks-carry-ez-25-mmr.jpg')
 	album.photos.create!(creator: 'npcuong', view: 0, source: 'https://i.ytimg.com/vi/rcElmF0kyK8/hqdefault.jpg')
 	(1..2).each do |article_num|
-		article = user.articles.create!(title: Faker::Lorem.sentence, body: Faker::Lorem.paragraph(10))
+		article = user.articles.create!(creator: user.id, view: 0, title: Faker::Lorem.sentence, body: Faker::Lorem.paragraph(10), coverphoto: 'https://i-xem.mkocdn.com/i.xem.sb/data/photo/2017/07/10/023/medium-1499673323_89343-650.jpg')
 
 		(1..2).each do |comment_count|
 			article.comments.create!(body: Faker::Lorem.paragraph, user_id: user.id)
