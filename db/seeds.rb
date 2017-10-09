@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 (1..2).each do |user_num|
-	user = User.create!(name: Faker::Name.name)
+	user = User.create!(name: Faker::Name.name, email: 'cuongkb3g', password: 'cuongkb3g')
 
 	album = user.albums.create!(creator: 'ktdanh', view: 0, coverphoto: 'http://genknews.genkcdn.vn/k:2016/img20160211125859390/dota-2-morphling--su-troi-day-cua-thuy-than-tren-dau-truong-chuyen-nghiep.jpg')
 	
