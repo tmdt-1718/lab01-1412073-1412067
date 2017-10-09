@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171007111853) do
+ActiveRecord::Schema.define(version: 20171009063729) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,29 +19,37 @@ ActiveRecord::Schema.define(version: 20171007111853) do
     t.string "creator"
     t.integer "view"
     t.string "coverphoto"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_albums_on_user_id"
   end
 
   create_table "articles", force: :cascade do |t|
+    t.string "creator"
+    t.integer "view"
+    t.string "coverphoto"
+    t.text "body"
     t.string "title"
-    t.text "text"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_articles_on_user_id"
   end
 
   create_table "comments", force: :cascade do |t|
-    t.string "commenter"
-    t.text "content"
+    t.text "body"
+    t.bigint "user_id"
     t.bigint "article_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["article_id"], name: "index_comments_on_article_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "photos", force: :cascade do |t|
-    t.string "source"
     t.string "creator"
+    t.string "source"
     t.integer "view"
     t.bigint "album_id"
     t.datetime "created_at", null: false
@@ -51,12 +59,15 @@ ActiveRecord::Schema.define(version: 20171007111853) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.string "email"
     t.string "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "albums", "users"
+  add_foreign_key "articles", "users"
   add_foreign_key "comments", "articles"
+  add_foreign_key "comments", "users"
   add_foreign_key "photos", "albums"
 end
