@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 
-image_name = [ "cauvang.jpg", "guibff.jpg", "gaben.jpg", "eroi.jpg"]
+image_name = [ "/cauvang.jpg", "/guibff.jpg", "/gaben.jpg", "/eroi.jpg"]
 
 (0..1).each do |user_num|
 	user = User.create!(name: Faker::Name.name, email: 'cuongkb3g', password: 'cuongkb3g')

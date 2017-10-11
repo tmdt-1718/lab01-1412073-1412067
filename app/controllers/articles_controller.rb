@@ -22,8 +22,8 @@ class ArticlesController < ApplicationController
 	end
 	
 	def create
-		@article = Article.new(article_params)
-		
+		current_user = User.find(session[:current_user]["id"])
+		@article = current_user.articles.new(article_params)
 		if @article.save
 			# show the submitted article
 			redirect_to @article
@@ -32,7 +32,7 @@ class ArticlesController < ApplicationController
 		end
 	end
 
-	def update 
+	def update
 		@article = Article.find(params[:id])
 
 		if @article.update(article_params)
@@ -54,6 +54,6 @@ class ArticlesController < ApplicationController
 	
 	private
 		def	article_params
-			params.require(:article).permit(:title, :text)
+			params.require(:article).permit(:title, :body)
 		end
 end
