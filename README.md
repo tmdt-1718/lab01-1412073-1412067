@@ -50,7 +50,7 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 
 Link ảnh GIF demo ứng dụng:
 
-![Hhihi](https://media.giphy.com/media/l378tqo5dfYzYellC/giphy.gif)
+![](https://media.giphy.com/media/l378tqo5dfYzYellC/giphy.gif)
 ![Alt Text](https://media.giphy.com/media/3ov9jVWSErC88DqLUk/giphy.gif)
 ![Alt Text](https://media.giphy.com/media/3ov9jGxi0p93iD8Gha/giphy.gif)
 ![Alt Text](https://media.giphy.com/media/3ohhwlAH7HDx7UIuHu/giphy.gif)
